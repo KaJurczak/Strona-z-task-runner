@@ -1,0 +1,240 @@
+/* Variables */
+
+$color-main: white;
+$color-grey: #ecf0f1;
+$color-dark-grey: #7f8c8d;
+$color-yellow: #f1c40f;
+
+$color-font-light: white;
+$color-font-dark: black;
+
+$font-italic: 'IM Fell Great Primer', serif;
+$font-logo: 'Great Vibes', cursive;
+$font-header: 'Oswald', sans-serif;
+
+$transition: all 1s;
+
+/* Global */
+
+body {
+  text-align: center;
+  background: $color-main;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: $font-header;
+  color: $color-font-dark;
+}
+
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.page-subtitle, .section-subtitle {
+  font-style: italic;
+  font-family: $font-italic;
+}
+
+.section-subtitle {
+  color: $color-dark-grey;
+  font-size: 20px;
+}
+
+.section-title {
+  line-height: 0.5;
+  font-size: 30px;
+}
+
+/* splash */
+
+.logo {
+  color: $color-yellow;
+  font-family: $font-logo;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.logo p {
+  margin-top: 0;
+}
+
+.menu {
+  color: $color-font-light;
+  padding: 30px;
+  text-align: right;
+  padding-top: 0;
+}
+
+.navigation ul {
+  padding: 0 30px;
+  margin: 0;
+  list-style-type: none; //wylaczanie punktorow
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 50px;
+  position: relative;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: $color-font-light;
+}
+
+.splash {
+  height: 100vh;
+  position: relative;
+  background-image: url('https://i.postimg.cc/FRvRkwyx/watch-technology-glass-pen-phone-black-98958-pxhere-com.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.splash-inner {
+  position: absolute;
+  color: $color-font-light;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.splash-inner .page-title {
+  font-size: 100px;
+}
+
+.splash-inner .page-subtitle {
+  font-size: 60px;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 200px;
+  margin: 20px auto 0 auto;
+  padding: 20px 50px;
+  border-radius: 2px;
+  font-family: $font-header;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none; //brak podkreslenia tekstu
+  cursor: pointer; //przy najechaniu kursor zmienia sie w reke
+  border: 2px solid $color-yellow;
+  background: $color-yellow;
+  color: $color-font-light;
+}
+
+/* services */
+
+.services {
+  background-color: white;
+}
+
+.service-elements {
+  padding: 30px;
+}
+
+.service-elements i {
+  color: $color-yellow;
+  border: 3px solid $color-yellow;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  font-size: 40px;
+}
+
+.service-elements p {
+  font-size: 18px;
+  color: $color-dark-grey;
+}
+
+.service-elements h4, .service-elements i, .service-elements p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* portfolio */
+
+.portfolio {
+  background: $color-grey;
+}
+
+.portfolio .section-subtitle {
+  padding-bottom: 30px;
+}
+
+.portfolio-elements {
+  padding: 20px;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.portfolio-text {
+  background: $color-main;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 0.2;
+}
+
+.portfolio-text p {
+  font-family: $font-italic;
+  color: $color-dark-grey;
+  font-size: 20px;
+}
+
+/* footer */
+
+.page-footer .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-footer .copyrights {
+  margin-top: 20px;
+}
+
+.page-footer .copyrights i {
+  font-size: 15px;
+  background: $color-main;
+  color: $color-font-dark;
+  text-align: right;
+  margin-top: auto;
+}
+
+.page-footer .copyrights p {
+  text-align: left;
+  padding-left: 0;
+  font-size: 15px;
+  margin-bottom: auto;
+}
+
+.page-footer .fonts {
+  text-align: left;
+}
+
+.page-footer li {
+  font-size: 0;
+  display: inline;
+  padding: 5px;
+  text-align: center;
+}
+
+.page-footer .fonts i {
+  font-size: 20px;
+  background: $color-font-dark;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: $color-main;
+  border-radius: 50%;
+  transition: $transition;
+}
+
+.page-footer .fonts i:hover {
+  transform: scale(1.5);
+}
