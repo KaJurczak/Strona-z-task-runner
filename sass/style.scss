@@ -238,3 +238,29 @@ body {
 .page-footer .fonts i:hover {
   transform: scale(1.5);
 }
+
+/* media */
+
+@media (max-width: 768px) {
+  .splash-inner {
+    line-height: 1;
+  }
+
+  .splash-inner .page-title {
+    font-size: 70px;
+  }
+
+  .splash-inner .page-subtitle {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .splash-inner .page-subtitle {
+    font-size: 0;
+  }
+
+  .menu {
+    text-align: left;
+  }
+}
